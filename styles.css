@@ -1,0 +1,176 @@
+* {
+    background-color: #DEF7EB;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+
+h3, h4, h5, u {
+    color: #303538;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+h1, h2 {
+    color: #6393AA;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 45pt;   
+}
+
+h2 {
+    font-size: 30pt;
+}
+
+body {
+    background-color: #DEF7EB;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #303538;
+    transition: background-color 0.5s, color 0.5s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+    background-color: #C6F7DF;
+}
+
+.navbar{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #DEF7EB;
+    box-shadow: 0 1px 5px 0px rgb(0 0 0 / 50%)
+}
+
+a.navbar-brand {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+a.footer {
+    margin-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #303538;
+    text-decoration: none;
+    transition: background-color 0.5s, color 0.5s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+div.footer {
+    text-align: center;
+}
+
+a.footer:hover {
+    color: black;
+    background-color: #C6F7DF;
+}
+
+.btn {
+    background-color: #6393AA;
+    border-style: none;
+    padding-right: 13px;
+    padding-bottom: 10px;
+    padding-left: 13px;
+    margin-right: 10px;
+}
+
+button.resume {
+    right: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+svg {
+    background-color: inherit;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+section p {
+    font-size: 16pt;
+    padding-bottom: 50px;
+}
+
+li {
+    color: #303538;
+    font-size: 16pt;
+}
+
+.joke {
+    color: #303538;
+    font-size: 10pt;
+    font-weight: 600;
+}
+
+.intro {
+    padding-top: 380px;
+    padding-bottom: 200px;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.last {
+    padding-bottom: 50px;
+}
+
+.last-2 {
+    padding-bottom: 0px;
+}
+
+.fade {
+    opacity: 0;
+}
+
+@keyframes cool {
+    0%   {background-color: #6393AA; left:-5%; top:-5%;}
+    25%  {background-color: #303538; left:99%; top:-5%;}
+    50%  {background-color: #6393AA; left:99%; top:85%;}
+    75%  {background-color: #303538; left:-5%; top:85%;}
+    100% {background-color: #6393AA; left:-5%; top:-5%;}
+}
+
+.circle {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #DEF7EB;
+    position: relative;
+    animation-name: cool;
+    animation-duration: 8s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}

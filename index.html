@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="fade.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Abtin's Portfolio</title>
+    <link rel="icon" href="Assets/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img alt="logo" src="Assets/icon.png" , height="50" , width="50">
+            </a>
+            <a class="navbar-brand" href="#">AT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#qualifications">Qualifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#interests">Interests</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me -->
+    <section class="intro container-md">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="circle"></div>
+                <h1>Hello There, <span class="joke">(General Kenobi)</span></h1>
+                <h1>I'm Abtin Tabrizi!</h1>
+                <p>
+                    I'm currently in my 1B term at the University of Waterloo pursuing my Bachelor of Computer
+                    Science.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="Assets/University_of_Waterloo_seal.svg" alt="University of Waterloo seal" , height="250" ,
+                    width="250">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <a href="https://github.com/STr3AK1337" target="_blank">
+                    <button type="button" class="round btn btn-outline-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-github"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                            </path>
+                        </svg>
+                        <span class="visually-hidden">Button</span>
+                    </button>
+                </a>
+                <a href="https://ca.linkedin.com/in/abtin-a-tabrizi" target="_blank">
+                    <button type="button" class="round btn btn-outline-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                        <span class="visually-hidden">Button</span>
+                    </button>
+                </a>
+            </div>
+            <div class="col-md-5"></div>
+            <div class="col-md-1">
+                <a href="Assets/website_resume.pdf" target="_blank">
+                    <button type="button" class="resume btn btn-dark" width="500">Résumé</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Qualifications -->
+    <section class="fade container-md" id="qualifications">
+        <h2>Highlights of Qualifications</h2>
+        <hr>
+        <ul>
+            <li>
+                <h4>Languages and Tools</h4>
+                <ul>
+                    <li>
+                        Working knowledge of <b>Python, HTML, CSS, C, Racket, Microsoft Word, Excel,
+                            PowerPoint,</b> and <b>Google equivalents</b>
+                    </li>
+                    <li class="last">
+                        Familiarity with <b>Bootstrap, C#/C++, Java, Unity, R, Github</b> and <b>Kivy</b>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>Transferable Skills</h4>
+                <ul>
+                    <li>
+                        Outstanding problem solving and ability to learn new concepts obtained through
+                        programming experience
+                    </li>
+                    <li>
+                        Excellent project management and teamwork skills developed through leadership
+                        positions and previous volunteering experience
+                    </li>
+                    <li>
+                        Effectively able to take initiative and complete tasks without explicit direction
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="fade container-md" id="projects">
+        <h2>Projects</h2>
+        <hr>
+        <ul>
+            <li>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Calendar App | <i>Python and Kivy Mobile App</i></h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="float-md-end"><u>Sept. 2019 - Jan. 2020</u></h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Developed a calendar and event planner application for mobile use with <b>Python</b>
+                    </li>
+                    <li>
+                        Built resizable, user-friendly interfaces with the <b>Kivy</b> framework for Python so the
+                        app would be intuitive on both PC and mobile
+                    </li>
+                    <li>
+                        Designed and documented the program with flowcharts and UML for future feature
+                        implementations and maintainability
+                    </li>
+                    <li class="last">
+                        Implemented a user login system and read/stored user data in files to manage and
+                        organize user specific information
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>2D Platformer | <i>Unity and C# Program</i></h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="float-md-end"><u>Feb. 2021 - Present</u></h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Researched and self-taught <b>Unity</b> and <b>C#</b> to develop interactive 2D and 3D
+                        games
+                    </li>
+                    <li>
+                        Created scripts in <b>C#</b> to control player movement, interactions, and animations
+                    </li>
+                    <li class="last">
+                        Constructed levels with a 2D tilemap asset workflow and 3D modeling
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Digital Clarinet | <i>Computer Engineering Project</i></h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="float-md-end"><u>Feb. 2019 - Jun. 2019</u></h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Prototyped a battery powered playable electronic clarinet
+                    </li>
+                    <li>
+                        Designed and assembled a printed circuit board to control buttons and sounds
+                        produced by clarinet
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="fade container-md" id="experience">
+        <h2>Experience</h2>
+        <hr>
+        <ul>
+            <li>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Team Leader | <i>John Fraser 2020 Awards Ceremony</i></h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="float-md-end"><u>Apr. 2020 - Jun. 2020</u></h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Directed a team of 5 to plan, coordinate and execute all technological aspects of high
+                        school awards ceremony, resulting in highest turnout in history of school
+                    </li>
+                    <li>
+                        Troubleshot technical issues before and during awards ceremony ensuring everything
+                        ran smoothly and prevent delays
+                    </li>
+                    <li class="last">
+                        Wrote a <b>Python</b> program to collect the email addresses of award recipients to efficiently
+                        send important information to targeted groups
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-7">
+                        <h4>Playtest Participant | <i>Unannounced Odyssey Interactive Game</i></h4>
+                    </div>
+                    <div class="col-md-5">
+                        <h5 class="float-md-end"><u>Dec. 2020 - Present</u></h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Reported bugs to the team of developers resulting in a more stable game
+                    </li>
+                    <li>
+                        Communicated feedback about gameplay systems and art design
+                    </li>
+                    <li>
+                        Coordinated playtest teams and dates with developers and playtest participants
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="fade container-md" id="education">
+        <h2>Education</h2>
+        <hr>
+        <ul>
+            <li>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>University of Waterloo | <i>Waterloo, ON</i></h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="float-md-end"><u>Sept. 2020 - Present</u></h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Candidate for Bachelor of Computer Science, Honours Computer Science
+                    </li>
+                    <li>
+                        Dean’s Honours List for 1A term <b>(92.6% weighted average, 3.98 GPA)</b>
+                    </li>
+                    <li>
+                        University of Waterloo President’s Scholarship of Distinction recipient
+                    </li>
+                </ul>
+                <h5>Relevant Courses</h5>
+                <ul>
+                    <li>Designing Functional Programs</li>
+                    <li class="last">Elementary Algorithm Design and Data Abstraction</li>
+                </ul>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>John Fraser Secondary School | <i>Waterloo, ON</i></h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="float-md-end"><u>Sept. 2016 - Jun. 2020</u></h5>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Interests -->
+    <section class="fade container-md last-2" id="interests">
+        <h2>Interests</h2>
+        <hr>
+        <ul>
+            <li>Software Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Machine Learning</li>
+            <li>Game Development</li>
+            <li>Comupter Hardware</li>
+            <li>Programming Languages</li>
+            <li>Web Development</li>
+            <li>Esports</li>
+            <li>Music</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer container-md">
+        <a class="footer" href="#">Back to Top</a>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAA1jztrhC5L1JBphmbGtW1oFHNGI28A04",
+            authDomain: "personal-website-dcca2.firebaseapp.com",
+            projectId: "personal-website-dcca2",
+            storageBucket: "personal-website-dcca2.appspot.com",
+            messagingSenderId: "638794886951",
+            appId: "1:638794886951:web:e065dafc31d5d144018302",
+            measurementId: "G-1XDZQN1Z4B"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</body>
+
+</html>
