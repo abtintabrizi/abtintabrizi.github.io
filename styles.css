@@ -1,39 +1,38 @@
 /* || General Styles */
 
 * {
-    background-color: #DEF7EB;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
 }
 
-h3, h4, h5, u {
-    color: #303538;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-}
-
-h1, h2 {
-    color: #6393AA;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-}
-
-h1 {
-    font-size: 45pt;   
-}
-
-h2 {
-    font-size: 30pt;
-}
-
 .intro {
-    padding-top: 15%;
-    padding-bottom: 15%;
-    /*padding-top: 380px;*/
-    /*padding-bottom: 200px;*/
+    padding-top: 17vw;
+    padding-bottom: 10vw;
     animation-name: fade;
     animation-duration: 2s;
     animation-timing-function: ease-in;
+}
+
+@media screen and (max-width: 500px) {
+    .intro {
+        padding-top: 30%;
+    }
+}
+
+.intro img {
+    width: 15vw;
+}
+
+@media screen and (max-width: 961px) {
+    .intro img {
+        width: 27.5vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .intro img {
+        width: 40vw;
+    }
 }
 
 body {
@@ -50,32 +49,45 @@ section {
 }
 
 .last {
-    padding-bottom: 50px;
+    padding-bottom: 4vh;
 }
 
 .last-2 {
     padding-bottom: 0px;
 }
 
-.cert-space {
-    padding-bottom: 25px;
-}
-
-a.footer:hover {
-    color: black;
-    background-color: #C6F7DF;
-}
-
 .btn {
+    width: 40px;
+    height: 40px;
     background-color: #6393AA;
     border-style: none;
-    padding-right: 13px;
-    padding-bottom: 10px;
-    padding-left: 13px;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.git {
+    background-image: url("Assets/github_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    background-color: #6393AA;
+}
+
+.lin {
+    background-image: url("Assets/linkedin_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    background-color: #6393AA;
 }
 
 button.resume {
+    width: 100px;
     right: 500px;
 }
 
@@ -88,13 +100,15 @@ a {
 }
 
 svg {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
     background-color: inherit;
 }
 
 .circle {
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 0.9vw;
+    height: 0.9vw;
     background-color: #DEF7EB;
     position: relative;
     animation-name: cool;
@@ -104,11 +118,18 @@ svg {
 }
 
 @keyframes cool {
-    0%   {background-color: #6393AA; left:-5%; top:-5%;}
-    25%  {background-color: #303538; left:99%; top:-5%;}
-    50%  {background-color: #6393AA; left:99%; top:85%;}
-    75%  {background-color: #303538; left:-5%; top:85%;}
-    100% {background-color: #6393AA; left:-5%; top:-5%;}
+    0%   {background-color: #6393AA; left:-4%; top:0%;}
+    25%  {background-color: #303538; left:100%; top:0%;}
+    50%  {background-color: #6393AA; left:100%; top:93%;}
+    75%  {background-color: #303538; left:-4%; top:93%;}
+    100% {background-color: #6393AA; left:-4%; top:0%;}
+}
+
+@media screen and (max-width: 961px) {
+    .circle {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 /* || Header and Navigation */
@@ -147,15 +168,15 @@ a.footer {
     margin-top: 100px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
-    font-size: 14pt;
     color: #303538;
     text-decoration: none;
     transition: background-color 0.5s, color 0.5s;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     text-align: center;
+}
+
+a.footer:hover {
+    color: black;
+    background-color: #C6F7DF;
 }
 
 div.footer {
@@ -173,9 +194,21 @@ div.footer {
 
 /* || Typography */
 
-section p {
+h3, h4, h5, u {
+    color: #303538;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+h1, h2 {
+    color: #6393AA;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+p {
     font-size: 16pt;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 li {
@@ -187,4 +220,97 @@ li {
     color: #303538;
     font-size: 10pt;
     font-weight: 600;
+}
+
+@media screen and (min-width: 961px) {
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    h3, h4 {
+        font-size: calc(1.275rem + .3vw);
+    }
+
+    p, li {
+        font-size: 16pt;
+    }
+
+    a.footer {
+        font-size: 16pt;
+        padding-top: 20pt;
+        padding-bottom: 20pt;
+        padding-right: 20pt;
+        padding-left: 20pt;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 4.5vw;
+    }
+
+    h3, h4, h5, u {
+        font-size: calc(1.1rem + .3vw);
+    }
+
+    p, li {
+        font-size: 14pt;
+    }
+
+    a.footer {
+        font-size: 14pt;
+        padding-top: 16pt;
+        padding-bottom: 16pt;
+        padding-right: 16pt;
+        padding-left: 16pt;
+    }
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    h3, h4, h5, u {
+        font-size: calc(0.9rem + .3vw);
+    }
+
+    p, li {
+        font-size: 12pt;
+    }
+
+    a.footer {
+        font-size: 12pt;
+        padding-top: 12pt;
+        padding-bottom: 12pt;
+        padding-right: 12pt;
+        padding-left: 12pt;
+    }
+
+    svg {
+        width: 12px;
+        height: 12px;
+    }
 }
