@@ -85,6 +85,10 @@ section {
     margin-right: 20px;
 }
 
+.git:hover, .lin:hover {
+    background-color: black;
+}
+
 button.resume {
     width: 100px;
     right: 500px;
