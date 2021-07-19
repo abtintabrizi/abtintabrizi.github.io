@@ -136,8 +136,10 @@ li {
 }
 
 .intro {
-    padding-top: 380px;
-    padding-bottom: 200px;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    /*padding-top: 380px;*/
+    /*padding-bottom: 200px;*/
     animation-name: fade;
     animation-duration: 2s;
     animation-timing-function: ease-in;
