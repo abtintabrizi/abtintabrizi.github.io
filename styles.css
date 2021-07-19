@@ -151,6 +151,10 @@ li {
     padding-bottom: 0px;
 }
 
+.cert-space {
+    padding-bottom: 25px;
+}
+
 .fade {
     opacity: 0;
 }
