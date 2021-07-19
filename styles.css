@@ -1,3 +1,5 @@
+/* || General Styles */
+
 * {
     background-color: #DEF7EB;
     font-family: 'Source Sans Pro', sans-serif;
@@ -24,16 +26,92 @@ h2 {
     font-size: 30pt;
 }
 
+.intro {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    /*padding-top: 380px;*/
+    /*padding-bottom: 200px;*/
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
 body {
     background-color: #DEF7EB;
 }
 
 section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    /*padding-top: 100px;
+    padding-bottom: 100px;*/
     padding-left: 200px;
     padding-right: 200px;
 }
+
+.last {
+    padding-bottom: 50px;
+}
+
+.last-2 {
+    padding-bottom: 0px;
+}
+
+.cert-space {
+    padding-bottom: 25px;
+}
+
+a.footer:hover {
+    color: black;
+    background-color: #C6F7DF;
+}
+
+.btn {
+    background-color: #6393AA;
+    border-style: none;
+    padding-right: 13px;
+    padding-bottom: 10px;
+    padding-left: 13px;
+    margin-right: 10px;
+}
+
+button.resume {
+    right: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+svg {
+    background-color: inherit;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #DEF7EB;
+    position: relative;
+    animation-name: cool;
+    animation-duration: 8s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cool {
+    0%   {background-color: #6393AA; left:-5%; top:-5%;}
+    25%  {background-color: #303538; left:99%; top:-5%;}
+    50%  {background-color: #6393AA; left:99%; top:85%;}
+    75%  {background-color: #303538; left:-5%; top:85%;}
+    100% {background-color: #6393AA; left:-5%; top:-5%;}
+}
+
+/* || Header and Navigation */
 
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Source Sans Pro', sans-serif;
@@ -84,40 +162,16 @@ div.footer {
     text-align: center;
 }
 
-a.footer:hover {
-    color: black;
-    background-color: #C6F7DF;
-}
-
-.btn {
-    background-color: #6393AA;
-    border-style: none;
-    padding-right: 13px;
-    padding-bottom: 10px;
-    padding-left: 13px;
-    margin-right: 10px;
-}
-
-button.resume {
-    right: 500px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.round {
-    border-radius: 50%;
-}
-
-svg {
-    background-color: inherit;
-}
-
 @keyframes fade {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+.fade {
+    opacity: 0;
+}
+
+/* || Typography */
 
 section p {
     font-size: 16pt;
@@ -133,50 +187,4 @@ li {
     color: #303538;
     font-size: 10pt;
     font-weight: 600;
-}
-
-.intro {
-    padding-top: 15%;
-    padding-bottom: 10%;
-    /*padding-top: 380px;*/
-    /*padding-bottom: 200px;*/
-    animation-name: fade;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-}
-
-.last {
-    padding-bottom: 50px;
-}
-
-.last-2 {
-    padding-bottom: 0px;
-}
-
-.cert-space {
-    padding-bottom: 25px;
-}
-
-.fade {
-    opacity: 0;
-}
-
-@keyframes cool {
-    0%   {background-color: #6393AA; left:-5%; top:-5%;}
-    25%  {background-color: #303538; left:99%; top:-5%;}
-    50%  {background-color: #6393AA; left:99%; top:85%;}
-    75%  {background-color: #303538; left:-5%; top:85%;}
-    100% {background-color: #6393AA; left:-5%; top:-5%;}
-}
-
-.circle {
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: #DEF7EB;
-    position: relative;
-    animation-name: cool;
-    animation-duration: 8s;
-    animation-delay: 0.5s;
-    animation-iteration-count: infinite;
 }
