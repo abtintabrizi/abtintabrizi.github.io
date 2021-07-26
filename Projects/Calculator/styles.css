@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background: rgb(99,147,170);
+    background: linear-gradient(95deg, rgba(99,147,170,1) 0%, rgba(222,247,235,1) 94%, rgba(222,247,235,1) 100%);
+    padding: 0;
+    margin: 0;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 11vh);
+    grid-template-rows: minmax(15vh, auto) repeat(5, 11vh);
+}
+
+.calculator button {
+    cursor: pointer;
+    font-size: calc(0.5rem + 1.25vh);
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    background-color: rgba(48, 53, 56, 1)
+}
+
+.calculator button:hover {
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+button {
+    transition: background-color .15s ease-in-out;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1vh 5vh 1vh 5vh;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous {
+    font-size: calc(0.5rem + 1vh);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.output .current {
+    font-size: calc(0.75rem + 3vh);
+    color: rgba(255, 255, 255, 1);
+}
