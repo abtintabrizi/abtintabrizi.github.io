@@ -13,26 +13,8 @@
     animation-timing-function: ease-in;
 }
 
-@media screen and (max-width: 500px) {
-    .intro {
-        padding-top: 30%;
-    }
-}
-
 .intro img {
     width: 15vw;
-}
-
-@media screen and (max-width: 961px) {
-    .intro img {
-        width: 27.5vw;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .intro img {
-        width: 40vw;
-    }
 }
 
 body {
@@ -48,10 +30,6 @@ section {
 
 .last {
     padding-bottom: 4vh;
-}
-
-.last-2 {
-    padding-bottom: 0px;
 }
 
 .btn {
@@ -129,11 +107,8 @@ svg {
     100% {background-color: #6393AA; left:-4%; top:0%;}
 }
 
-@media screen and (max-width: 961px) {
-    .circle {
-        width: 10px;
-        height: 10px;
-    }
+.card {
+    width: 18rem;
 }
 
 /* || Header and Navigation */
@@ -226,6 +201,8 @@ li {
     font-weight: 600;
 }
 
+/* || Media Queries */
+
 @media screen and (min-width: 961px) {
     h1 {
         font-size: 4vw;
@@ -258,6 +235,23 @@ li {
 }
 
 @media screen and (max-width: 960px) {
+    .card {
+        width: 9rem;
+    }
+
+    .card h5, .card p, .card button {
+        font-size: 2vw;
+    }
+
+    .intro img {
+        width: 27.5vw;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+    }
+
     h1 {
         font-size: 6vw;
     }
@@ -289,6 +283,27 @@ li {
 }
 
 @media screen and (max-width: 500px) {
+    .card {
+        width: 5rem;
+    }
+
+    .card button {
+        font-size: 2vw;
+        width: 10vw;
+
+    }
+
+    .card h5, .card p {
+        font-size: 2vw;
+    }
+
+    .intro {
+        padding-top: 30%;
+    }
+    .intro img {
+        width: 40vw;
+    }
+
     h1 {
         font-size: 8vw;
     }
