@@ -1,14 +1,14 @@
 import {
-  Button,
   Collapse,
   IconButton,
-  MobileNav,
   Navbar,
   Typography,
-} from '@material-tailwind/react';
-import { data } from './shared/data';
-import { useState } from 'react';
-import icon from './shared/icon.png';
+} from "@material-tailwind/react";
+import { data } from "./shared/data";
+import { useState } from "react";
+import icon from "./shared/icon.png";
+import Section from "./shared/Section";
+import ScrollToTop from "./shared/ScrollToTop";
 
 export default function Home() {
   const [openNav, setOpenNav] = useState(false);
@@ -20,9 +20,9 @@ export default function Home() {
         className='sticky top-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4'
       >
         <div className='flex items-center justify-between text-blue-gray-900'>
-          <a href='#'>
+          <a href='/#'>
             <div className='flex flex-row justify-center items-center gap-2'>
-              <img src={icon} className='w-10 h-10' />
+              <img src={icon} className='w-10 h-10' alt='logo' />
               <Typography className='mr-4 cursor-pointer py-1.5 font-medium text-blue-gray-900'>
                 Abtin Tabrizi
               </Typography>
@@ -82,50 +82,16 @@ export default function Home() {
             </IconButton>
           </div>
         </div>
-        <Collapse open={openNav}>{'hello'}</Collapse>
+        <Collapse open={openNav}>{"hello"}</Collapse>
       </Navbar>
-      <main className='w-full'>
-        <div className='flex flex-col justify-center items-center mt-20'>
+      <main className='w-full mt-5'>
+        <div className='flex flex-col justify-center items-center'>
           {data.map((section) => {
-            return <div>{section.header}</div>;
-          })}
-        </div>
-        <div className='flex flex-col justify-center items-center mt-20'>
-          {data.map((section) => {
-            return <div>{section.header}</div>;
-          })}
-        </div>
-        <div className='flex flex-col justify-center items-center mt-20'>
-          {data.map((section) => {
-            return <div>{section.header}</div>;
-          })}
-        </div>
-        <div className='flex flex-col justify-center items-center mt-20'>
-          {data.map((section) => {
-            return <div>{section.header}</div>;
-          })}
-        </div>
-        <div className='flex flex-col justify-center items-center mt-20'>
-          {data.map((section) => {
-            return <div>{section.header}</div>;
-          })}
-        </div>
-        <div className='flex flex-col justify-center items-center mt-20'>
-          {data.map((section) => {
-            return <div>{section.header}</div>;
-          })}
-        </div>
-        <div className='flex flex-col justify-center items-center mt-20'>
-          {data.map((section) => {
-            return <div>{section.header}</div>;
-          })}
-        </div>
-        <div className='flex flex-col justify-center items-center mt-20'>
-          {data.map((section) => {
-            return <div>{section.header}</div>;
+            return <Section data={section}></Section>;
           })}
         </div>
       </main>
+      <ScrollToTop />
     </div>
   );
 }
