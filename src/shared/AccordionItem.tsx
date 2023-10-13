@@ -1,12 +1,12 @@
-import { useState } from "react";
-import { SubSectionInfo } from "./data";
+import { useState } from 'react';
+import { SubSectionInfo } from './data';
 import {
   Accordion,
   AccordionBody,
   AccordionHeader,
   Typography,
-} from "@material-tailwind/react";
-import classNames from "classnames";
+} from '@material-tailwind/react';
+import classNames from 'classnames';
 
 function Icon({ open }: { open: boolean }) {
   return (
@@ -16,8 +16,8 @@ function Icon({ open }: { open: boolean }) {
       viewBox='0 0 24 24'
       strokeWidth={2}
       stroke='currentColor'
-      className={classNames("h-5 w-5 transition-transform", {
-        "rotate-180": open,
+      className={classNames('h-5 w-5 transition-transform', {
+        'rotate-180': open,
       })}
     >
       <path
@@ -48,9 +48,18 @@ export default function AccordionItem({ data }: { data: SubSectionInfo }) {
         >
           <AccordionHeader
             onClick={() => toggleOpen(open)}
-            className='border-b-blue-gray-300 px-4'
+            className='border-b-blue-gray-300 px-4 items-center'
           >
-            <Typography variant='h4'>{data.itemHeader}</Typography>
+            <div className='flex flex-row items-center justify-between w-full'>
+              <Typography variant='h5'>
+                {data.itemHeader} | <i>{data.description}</i>
+              </Typography>
+              {data.startDate && data.endDate && (
+                <Typography variant='h6'>
+                  {data.startDate} - {data.endDate}
+                </Typography>
+              )}
+            </div>
           </AccordionHeader>
           <AccordionBody>
             <ul className='list-disc px-4'>
@@ -69,7 +78,17 @@ export default function AccordionItem({ data }: { data: SubSectionInfo }) {
       ) : (
         <Accordion open={false}>
           <AccordionHeader className='cursor-default border-b-blue-gray-300 px-4'>
-            <Typography variant='h4'>{data.itemHeader}</Typography>
+            <div className='flex flex-row items-center justify-between w-full'>
+              <Typography variant='h5'>
+                {data.itemHeader} | <i>{data.description}</i>
+              </Typography>
+              {data.startDate && data.endDate && (
+                <Typography variant='h6'>
+                  {data.startDate} - {data.endDate}
+                </Typography>
+              )}
+              {data.date && <Typography variant='h6'>{data.date}</Typography>}
+            </div>
           </AccordionHeader>
         </Accordion>
       )}

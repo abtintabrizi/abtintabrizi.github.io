@@ -1,17 +1,32 @@
 import {
   Collapse,
   IconButton,
+  List,
+  ListItem,
   Navbar,
   Typography,
-} from "@material-tailwind/react";
-import { data } from "./shared/data";
-import { useState } from "react";
-import icon from "./shared/icon.png";
-import Section from "./shared/Section";
-import ScrollToTop from "./shared/ScrollToTop";
+} from '@material-tailwind/react';
+import { data } from './shared/data';
+import { useEffect, useState } from 'react';
+import icon from './shared/icon.png';
+import Section from './shared/Section';
+import ScrollToTop from './shared/ScrollToTop';
 
 export default function Home() {
   const [openNav, setOpenNav] = useState(false);
+
+  useEffect(() => {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // @ts-ignore
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+        });
+      });
+    });
+  }, []);
 
   return (
     <div className='bg-gradient-to-br from-white to-light-blue-100 w-full h-full'>
@@ -35,7 +50,7 @@ export default function Home() {
                 return (
                   <a
                     key={section.header}
-                    href={section.header}
+                    href={`#${section.header}`}
                     className='font-bold p-4 border border-blue-gray-400 rounded-3xl text-blue-gray-900 hover:shadow-md hover:bg-blue-gray-200/10 ease-in-out duration-300'
                   >
                     {section.header}
@@ -82,9 +97,25 @@ export default function Home() {
             </IconButton>
           </div>
         </div>
-        <Collapse open={openNav}>{"hello"}</Collapse>
+        <Collapse open={openNav}>
+          <List>
+            {data.map((section) => {
+              return (
+                <ListItem className='p-0'>
+                  <a
+                    key={section.header}
+                    href={`#${section.header}`}
+                    className='p-3 font-bold w-full h-full'
+                  >
+                    {section.header}
+                  </a>
+                </ListItem>
+              );
+            })}
+          </List>
+        </Collapse>
       </Navbar>
-      <main className='w-full mt-5'>
+      <main className='relative w-full pb-20'>
         <div className='flex flex-col justify-center items-center'>
           {data.map((section) => {
             return <Section data={section}></Section>;
