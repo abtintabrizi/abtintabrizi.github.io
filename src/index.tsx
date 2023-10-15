@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import Home from './Home';
 import './index.css';
 import { ThemeProvider } from '@material-tailwind/react';
-import theme from './shared/theme';
+import theme from './shared/theme/theme';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

@@ -21,13 +21,13 @@ export const data: SectionInfo[] = [
     subSections: [
       {
         itemHeader: 'University of Waterloo',
-        description: 'Waterloo, ON',
+        location: 'Waterloo, ON',
         startDate: 'Sept. 2020',
         endDate: 'May 2025',
         listItems: [
           'Candidate for Bachelor of Computer Science, Honours Computer Science',
-          "Term 1A-3B Dean's Honours List",
           '92.1% Average, 4.0/4.0 CGPA',
+          "Term 1A-3B Dean's Honours List",
           "President's Scholarship of Distinction recipient",
         ],
         subSections: [
@@ -50,7 +50,7 @@ export const data: SectionInfo[] = [
       },
       {
         itemHeader: 'John Fraser Secondary School',
-        description: 'Mississauga, ON',
+        location: 'Mississauga, ON',
         startDate: 'Sept. 2016',
         endDate: 'Jun. 2020',
       },
@@ -66,9 +66,9 @@ export const data: SectionInfo[] = [
         startDate: 'Jan. 2023',
         endDate: 'Apr. 2023',
         listItems: [
-          'Updated and maintained responsive and interactive UI for the TRAC web application using <strong>Vue.js</strong> and frontend concepts such as <strong>routing</strong> and <strong>stores</strong> used by 88% of the top 50 providers in the retirement industry',
-          'Designed and implemented features by consuming RESTful APIs then processing and displaying the data through <strong>computed properties</strong> and <strong>lifecycle hooks</strong>',
-          'Debugged issues with the help of the browser developer tools and <strong>Vue Devtools</strong>',
+          'Updated and maintained responsive and interactive UI for the TRAC web application using <span className="font-bold">Vue.js</span> and frontend concepts such as <span className="font-bold">routing</span> and <span className="font-bold">stores</span> used by 88% of the top 50 providers in the retirement industry',
+          'Designed and implemented features by consuming RESTful APIs then processing and displaying the data through <span className="font-bold">computed properties</span> and <span className="font-bold">lifecycle hooks</span>',
+          'Debugged issues with the help of the browser developer tools and <span className="font-bold">Vue Devtools</span>',
         ],
       },
       {
@@ -78,9 +78,9 @@ export const data: SectionInfo[] = [
         startDate: 'May 2022',
         endDate: 'Aug. 2022',
         listItems: [
-          'Created and updated <strong>RESTful</strong> APIs implementing <strong>.NET</strong>’s entity framework in <strong>C#</strong> completing 6 backlog items, fixing 8 bugs, and correcting over 20 code smells',
-          'Modified customer-facing frontends in <strong>HTML, Sass,</strong> and <strong>AngularJS</strong> used by 75% of Am Law 200 firms',
-          'Participated in <strong>Scrum</strong> rituals and <strong>DevOps</strong> practices such as <strong>CI/CD</strong> and microservices',
+          'Created and updated <span className="font-bold">RESTful</span> APIs implementing <span className="font-bold">.NET</span>’s entity framework in <span className="font-bold">C#</span> completing 6 backlog items, fixing 8 bugs, and correcting over 20 code smells',
+          'Modified customer-facing frontends in <span className="font-bold">HTML, Sass,</span> and <span className="font-bold">AngularJS</span> used by 75% of Am Law 200 firms',
+          'Participated in <span className="font-bold">Scrum</span> rituals and <span className="font-bold">DevOps</span> practices such as <span className="font-bold">CI/CD</span> and microservices',
           'Collaborated with a globally diverse team spanning multiple time zones and different roles',
         ],
       },
@@ -91,9 +91,9 @@ export const data: SectionInfo[] = [
         startDate: 'May 2021',
         endDate: 'Aug. 2021',
         listItems: [
-          'Designed a prototype application that applies artificial intelligence through <b>Microsoft Azure</b>services such as <b>Functions</b> and <b>Cognitive Services</b> to prevent senior fraud through banking emails',
+          'Designed a prototype application that applies artificial intelligence through <span className="font-bold">Microsoft Azure</span>services such as <span className="font-bold">Functions</span> and <span className="font-bold">Cognitive Services</span> to prevent senior fraud through banking emails',
           "Presented a business pitch on the prototype to an RBC mentor resulting in very positive feedback on the prototype's idea, viability, and feasibility",
-          'Spent two weeks learning about <b>Microsoft Azure</b> and artificial intelligence resulting in the <b>Azure Fundamentals</b> and <b>Azure AI</b> certifications',
+          'Spent two weeks learning about <span className="font-bold">Microsoft Azure</span> and artificial intelligence resulting in the <span className="font-bold">Azure Fundamentals</span> and <span className="font-bold">Azure AI</span> certifications',
         ],
       },
     ],
@@ -105,8 +105,8 @@ export const data: SectionInfo[] = [
         itemHeader: 'Straights',
         description: 'CS 246 Final Project',
         listItems: [
-          'Recreated a modified version of the straights card game in <b>C++</b> with text-based input and output that can be played by four human or computer players',
-          'Leveraged the <b>Model View Controller/Observer</b> design pattern leading to maximized cohesion and minimized coupling between input, output, and logic',
+          'Recreated a modified version of the straights card game in <span className="font-bold">C++</span> with text-based input and output that can be played by four human or computer players',
+          'Leveraged the <span className="font-bold">Model View Controller/Observer</span> design pattern leading to maximized cohesion and minimized coupling between input, output, and logic',
           'Managed the logic and data of human and computer players through a polymorphic parent class and handled memory management by using references and smart pointers',
           'Generated and shuffled randomized decks of cards that could also be seeded for reproducibility to be used in the card game',
         ],
@@ -115,35 +115,35 @@ export const data: SectionInfo[] = [
         itemHeader: 'Roguelike Platformer',
         description: '2D Unity Game',
         listItems: [
-          'Scripted player behaviour and enemy behaviour including user interface, animations, controls, movement, attacking, items, and upgrades in <b>Unity</b> with <b>C#</b>',
+          'Scripted player behaviour and enemy behaviour including user interface, animations, controls, movement, attacking, items, and upgrades in <span className="font-bold">Unity</span> with <span className="font-bold">C#</span>',
           'Used an inheritance hierarchy for easy maintenance and expansion of damageable objects like players, enemies, and items',
-          'Implemented enemy pathfinding and artificial intelligence with the <b>A*</b> search algorithm resulting in smart enemies that can traverse levels',
-          'Procedurally generated maps from premade modular levels created with <b>Unity Tilemaps</b>, the <b>Universal Render Pipeline</b>, and assets from Unity Asset Store',
+          'Implemented enemy pathfinding and artificial intelligence with the <span className="font-bold">A*</span> search algorithm resulting in smart enemies that can traverse levels',
+          'Procedurally generated maps from premade modular levels created with <span className="font-bold">Unity Tilemaps</span>, the <span className="font-bold">Universal Render Pipeline</span>, and assets from Unity Asset Store',
         ],
       },
       {
         itemHeader: 'Hire-iQ',
         description: 'iQmetrix Hackathon 2021',
         listItems: [
-          'Developed a recruitment application with <b>Python</b> in a team of two that enables prospective employees searching for work to submit their information into a database that can be searched and filtered by recruiters',
-          'Stored and searched employee information in an <b>SQLite</b> database and created a graphical interface with the <b>Tkinter</b> GUI package',
-          'Wireframed and designed the program in <b>Figma</b> and collaborated through <b>GitHub</b>',
+          'Developed a recruitment application with <span className="font-bold">Python</span> in a team of two that enables prospective employees searching for work to submit their information into a database that can be searched and filtered by recruiters',
+          'Stored and searched employee information in an <span className="font-bold">SQLite</span> database and created a graphical interface with the <span className="font-bold">Tkinter</span> GUI package',
+          'Wireframed and designed the program in <span className="font-bold">Figma</span> and collaborated through <span className="font-bold">GitHub</span>',
         ],
       },
       {
         itemHeader: 'Old Portfolio Website',
         description: 'Personal Website',
         listItems: [
-          'Designed and implemented a visually pleasing website to serve as an online portfolio with <b>HTML, CSS,</b> and <b>JavaScript</b>',
-          "Ensured mobile and desktop responsiveness through <b>Bootstrap's</b> navbar, grid, and flex systems, and <b>CSS</b> media queries",
+          'Designed and implemented a visually pleasing website to serve as an online portfolio with <span className="font-bold">HTML, CSS,</span> and <span className="font-bold">JavaScript</span>',
+          "Ensured mobile and desktop responsiveness through <span className='font-bold'>Bootstrap's</span> navbar, grid, and flex systems, and <span className='font-bold'>CSS</span> media queries",
         ],
       },
       {
         itemHeader: 'Golden Years',
         description: 'High School Python Project',
         listItems: [
-          'Developed a calendar and health tracker application for the elderly with <b>Python</b> that allows users to easily navigate and keep track of important events and activities such as exercises and blood sugar measurements',
-          'Designed resizable, user-friendly interfaces catered towards the elderly with the <b>Kivy</b> framework for <b>Python</b> so that the app is intuitive to use on both desktop and mobile',
+          'Developed a calendar and health tracker application for the elderly with <span className="font-bold">Python</span> that allows users to easily navigate and keep track of important events and activities such as exercises and blood sugar measurements',
+          'Designed resizable, user-friendly interfaces catered towards the elderly with the <span className="font-bold">Kivy</span> framework for <span className="font-bold">Python</span> so that the app is intuitive to use on both desktop and mobile',
           'Implemented a login system to ensure the security of users and keep their information organized',
         ],
       },

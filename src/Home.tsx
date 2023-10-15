@@ -4,16 +4,25 @@ import {
   List,
   ListItem,
   Navbar,
-  Typography,
 } from '@material-tailwind/react';
 import { data } from './shared/data';
 import { useEffect, useState } from 'react';
-import icon from './shared/icon.png';
-import Section from './shared/Section';
-import ScrollToTop from './shared/ScrollToTop';
+import Section from './shared/section/Section';
+import ScrollToTop from './shared/home/ScrollToTop';
+import HomeIcon from './shared/home/HomeIcon';
 
 export default function Home() {
   const [openNav, setOpenNav] = useState(false);
+
+  const scrollAndClose = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth',
+    });
+
+    setTimeout(function () {
+      setOpenNav(false);
+    }, 500);
+  };
 
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -35,14 +44,7 @@ export default function Home() {
         className='sticky top-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4'
       >
         <div className='flex items-center justify-between text-blue-gray-900'>
-          <a href='/#'>
-            <div className='flex flex-row justify-center items-center gap-2'>
-              <img src={icon} className='w-10 h-10' alt='logo' />
-              <Typography className='mr-4 cursor-pointer py-1.5 font-medium text-blue-gray-900'>
-                Abtin Tabrizi
-              </Typography>
-            </div>
-          </a>
+          <HomeIcon />
 
           <div className='flex items-center gap-4'>
             <div className='mr-4 hidden lg:block space-x-4'>
@@ -58,6 +60,7 @@ export default function Home() {
                 );
               })}
             </div>
+
             <IconButton
               variant='text'
               className='ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden'
@@ -97,31 +100,33 @@ export default function Home() {
             </IconButton>
           </div>
         </div>
+
         <Collapse open={openNav}>
           <List>
             {data.map((section) => {
               return (
-                <ListItem className='p-0'>
-                  <a
-                    key={section.header}
-                    href={`#${section.header}`}
+                <ListItem className='p-0' key={section.header}>
+                  <button
                     className='p-3 font-bold w-full h-full'
+                    onClick={() => scrollAndClose(section.header)}
                   >
                     {section.header}
-                  </a>
+                  </button>
                 </ListItem>
               );
             })}
           </List>
         </Collapse>
       </Navbar>
+
       <main className='relative w-full pb-20'>
         <div className='flex flex-col justify-center items-center'>
           {data.map((section) => {
-            return <Section data={section}></Section>;
+            return <Section data={section} key={section.header}></Section>;
           })}
         </div>
       </main>
+
       <ScrollToTop />
     </div>
   );
