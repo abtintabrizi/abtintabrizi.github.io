@@ -4,17 +4,17 @@ import {
   List,
   ListItem,
   Navbar,
-} from '@material-tailwind/react';
-import HomeIcon from './HomeIcon';
-import { useEffect, useState } from 'react';
-import { data } from '../data';
+} from "@material-tailwind/react";
+import HomeIcon from "./HomeIcon";
+import { useEffect, useState } from "react";
+import { data } from "../data";
 
 export default function Navigation() {
   const [openNav, setOpenNav] = useState(false);
 
   const scrollAndClose = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
-      behavior: 'smooth',
+      behavior: "smooth",
     });
 
     setTimeout(function () {
@@ -24,12 +24,12 @@ export default function Navigation() {
 
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener("click", function (e) {
         e.preventDefault();
 
         // @ts-ignore
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth',
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
         });
       });
     });

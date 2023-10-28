@@ -1,12 +1,12 @@
-import { Typography } from '@material-tailwind/react';
-import { SectionInfo } from '../data';
-import AccordionItem from './AccordionItem';
+import { Typography } from "@material-tailwind/react";
+import { SectionInfo } from "../data";
+import AccordionItem from "./AccordionItem";
 
 export default function Section({ data }: { data: SectionInfo }) {
   return (
     <section
       id={data.header}
-      className='flex flex-col pt-20 w-full justify-center items-center'
+      className='flex flex-col pt-20 -mt-20 pb-20 w-full justify-center items-center'
     >
       <Typography variant='h2'>{data.header}</Typography>
 
