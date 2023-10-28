@@ -35,7 +35,7 @@ const CUSTOM_ANIMATION = {
   unmount: { scale: 0.9 },
 };
 
-const accordionHeader = (data: SubSectionInfo) => {
+const accordionHeaderContent = (data: SubSectionInfo) => {
   return (
     <div className='flex flex-row items-center justify-between w-full'>
       <div className='flex flex-col'>
@@ -95,7 +95,7 @@ export default function AccordionItem({
             onClick={() => toggleOpen(open)}
             className='border-b-blue-gray-300 px-4 items-center'
           >
-            {accordionHeader(data)}
+            {accordionHeaderContent(data)}
           </AccordionHeader>
 
           <AccordionBody>
@@ -128,7 +128,7 @@ export default function AccordionItem({
         /* Non-collapsible items */
         <Accordion open={false}>
           <AccordionHeader className='cursor-default border-b-blue-gray-300 px-4'>
-            {accordionHeader(data)}
+            {accordionHeaderContent(data)}
           </AccordionHeader>
         </Accordion>
       )}

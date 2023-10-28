@@ -6,7 +6,7 @@ export default function Section({ data }: { data: SectionInfo }) {
   return (
     <section
       id={data.header}
-      className='flex flex-col pt-20 sm:w-2/3 w-11/12 justify-center items-center'
+      className='flex flex-col pt-20 w-full justify-center items-center'
     >
       <Typography variant='h2'>{data.header}</Typography>
 

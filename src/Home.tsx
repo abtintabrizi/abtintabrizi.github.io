@@ -1,126 +1,16 @@
-import {
-  Collapse,
-  IconButton,
-  List,
-  ListItem,
-  Navbar,
-} from '@material-tailwind/react';
 import { data } from './shared/data';
-import { useEffect, useState } from 'react';
 import Section from './shared/section/Section';
 import ScrollToTop from './shared/home/ScrollToTop';
-import HomeIcon from './shared/home/HomeIcon';
+import Navigation from './shared/home/Navigation';
 
 export default function Home() {
-  const [openNav, setOpenNav] = useState(false);
-
-  const scrollAndClose = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({
-      behavior: 'smooth',
-    });
-
-    setTimeout(function () {
-      setOpenNav(false);
-    }, 500);
-  };
-
-  useEffect(() => {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        // @ts-ignore
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth',
-        });
-      });
-    });
-  }, []);
-
   return (
     <div className='bg-gradient-to-br from-white to-light-blue-100 w-full h-full'>
-      <Navbar
-        blurred
-        className='sticky top-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4'
-      >
-        <div className='flex items-center justify-between text-blue-gray-900'>
-          <HomeIcon />
+      <Navigation />
 
-          <div className='flex items-center gap-4'>
-            <div className='mr-4 hidden lg:block space-x-4'>
-              {data.map((section) => {
-                return (
-                  <a
-                    key={section.header}
-                    href={`#${section.header}`}
-                    className='font-bold p-4 border border-blue-gray-400 rounded-3xl text-blue-gray-900 hover:shadow-md hover:bg-blue-gray-200/10 ease-in-out duration-300'
-                  >
-                    {section.header}
-                  </a>
-                );
-              })}
-            </div>
-
-            <IconButton
-              variant='text'
-              className='ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden'
-              ripple={false}
-              onClick={() => setOpenNav(!openNav)}
-            >
-              {openNav ? (
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  className='h-6 w-6'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M6 18L18 6M6 6l12 12'
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='h-6 w-6'
-                  fill='none'
-                  stroke='currentColor'
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M4 6h16M4 12h16M4 18h16'
-                  />
-                </svg>
-              )}
-            </IconButton>
-          </div>
-        </div>
-
-        <Collapse open={openNav}>
-          <List>
-            {data.map((section) => {
-              return (
-                <ListItem className='p-0' key={section.header}>
-                  <button
-                    className='p-3 font-bold w-full h-full'
-                    onClick={() => scrollAndClose(section.header)}
-                  >
-                    {section.header}
-                  </button>
-                </ListItem>
-              );
-            })}
-          </List>
-        </Collapse>
-      </Navbar>
-
-      <main className='relative w-full pb-20'>
-        <div className='flex flex-col justify-center items-center'>
+      <main className='relative w-full pb-20 just flex flex-col items-center'>
+        <div className='flex flex-col justify-center items-center sm:w-2/3 w-11/12'>
+          {/* <Intro /> */}
           {data.map((section) => {
             return <Section data={section} key={section.header}></Section>;
           })}
