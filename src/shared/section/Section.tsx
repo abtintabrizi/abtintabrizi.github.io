@@ -1,4 +1,4 @@
-import { Typography } from '@material-tailwind/react';
+import { Chip, Typography } from '@material-tailwind/react';
 import { SectionInfo } from '../data/data';
 import AccordionItem from './AccordionItem';
 
@@ -22,12 +22,10 @@ export default function Section({ data }: { data: SectionInfo }) {
         })}
 
         {data.listItems && (
-          <div className='flex items-center justify-center'>
-            <ul className='list-disc'>
-              {data.listItems?.map((item) => {
-                return <li key={item}>{item}</li>;
-              })}
-            </ul>
+          <div className='flex flex-wrap items-center justify-center gap-2 mt-2'>
+            {data.listItems?.map((item) => {
+              return <Chip variant='gradient' value={item} />;
+            })}
           </div>
         )}
       </div>

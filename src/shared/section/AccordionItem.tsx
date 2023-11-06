@@ -104,7 +104,7 @@ export default function AccordionItem({
                 {data.listItems?.map((item) => {
                   return (
                     <Typography key={item}>
-                      <li className='ml-4 sm:text-base text-sm'>
+                      <li className='ml-4 sm:text-base text-sm text-black/80'>
                         {parse(item)}
                       </li>
                     </Typography>
