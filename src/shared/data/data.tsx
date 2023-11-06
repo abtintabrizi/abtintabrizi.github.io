@@ -1,10 +1,10 @@
-export interface SectionInfo {
+export type SectionInfo = {
   header: string;
   listItems?: string[];
   subSections?: SubSectionInfo[];
-}
+};
 
-export interface SubSectionInfo {
+export type SubSectionInfo = {
   itemHeader: string;
   description?: string;
   location?: string;
@@ -13,7 +13,7 @@ export interface SubSectionInfo {
   endDate?: string;
   listItems?: string[];
   subSections?: SubSectionInfo[];
-}
+};
 
 export const data: SectionInfo[] = [
   {

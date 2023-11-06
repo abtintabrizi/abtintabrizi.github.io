@@ -1,11 +1,11 @@
-import { Typography } from "@material-tailwind/react";
-import self from "../theme/self.png";
+import { Typography } from '@material-tailwind/react';
+import self from '../theme/self.png';
 // @ts-ignore
-import resume from "../theme/website_resume.pdf";
+import resume from '../theme/website_resume.pdf';
 
 export default function Intro() {
   return (
-    <section className='flex flex-row justify-center items-center mt-32 mb-14 md:min-h-screen sm:w-2/3 w-11/12 md:-mt-20 md:mb-0'>
+    <section className='flex flex-row justify-center items-center mt-32 mb-14 md:min-h-screen md:-mt-20 md:mb-0'>
       <div className='w-3/5'>
         <div>
           <Typography className='md:text-6xl text-3xl font-bold -mt-20 text-blue-gray-900'>
@@ -28,7 +28,7 @@ export default function Intro() {
             href='https://github.com/abtintabrizi'
             target='_blank'
             rel='noreferrer'
-            className='flex flex-row justify-center items-center gap-1 bg-light-blue-400 sm:p-3 p-2 hover:opacity-[0.85] rounded-lg font-semibold ease-in-out duration-300 hover:shadow-lg'
+            className='flex flex-row justify-center items-center gap-1 bg-light-blue-300 sm:p-3 p-2 hover:opacity-[0.85] rounded-lg font-semibold ease-in-out duration-300 hover:shadow-lg'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -45,7 +45,7 @@ export default function Intro() {
             href='https://www.linkedin.com/in/abtin-a-tabrizi/'
             target='_blank'
             rel='noreferrer'
-            className='flex flex-row justify-center items-center gap-1 bg-light-blue-400 sm:p-3 p-2 hover:opacity-[0.85] rounded-lg font-semibold ease-in-out duration-300 hover:shadow-lg'
+            className='flex flex-row justify-center items-center gap-1 bg-light-blue-300 sm:p-3 p-2 hover:opacity-[0.85] rounded-lg font-semibold ease-in-out duration-300 hover:shadow-lg'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -64,7 +64,7 @@ export default function Intro() {
             href={resume}
             target='_blank'
             rel='noreferrer'
-            className='flex flex-row justify-center items-center gap-1 bg-light-blue-400 sm:p-3 p-2 hover:opacity-[0.85] rounded-lg font-semibold ease-in-out duration-300 hover:shadow-lg'
+            className='flex flex-row justify-center items-center gap-1 bg-light-blue-300 sm:p-3 p-2 hover:opacity-[0.85] rounded-lg font-semibold ease-in-out duration-300 hover:shadow-lg'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'

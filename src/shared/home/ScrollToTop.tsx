@@ -1,5 +1,5 @@
-import { Button } from "@material-tailwind/react";
-import { useRef } from "react";
+import { Button } from '@material-tailwind/react';
+import { useRef } from 'react';
 
 export default function ScrollToTop() {
   const buttonRef = useRef<HTMLDivElement>(null);
@@ -10,15 +10,15 @@ export default function ScrollToTop() {
       document.body.scrollTop > 200 ||
       document.documentElement.scrollTop > 200
     ) {
-      if (buttonRef.current) buttonRef.current.style.display = "block";
+      if (buttonRef.current) buttonRef.current.style.display = 'block';
     } else {
-      if (buttonRef.current) buttonRef.current.style.display = "none";
+      if (buttonRef.current) buttonRef.current.style.display = 'none';
     }
   }
   function scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   }
 

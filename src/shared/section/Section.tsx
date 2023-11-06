@@ -1,6 +1,6 @@
-import { Typography } from "@material-tailwind/react";
-import { SectionInfo } from "../data";
-import AccordionItem from "./AccordionItem";
+import { Typography } from '@material-tailwind/react';
+import { SectionInfo } from '../data/data';
+import AccordionItem from './AccordionItem';
 
 export default function Section({ data }: { data: SectionInfo }) {
   return (

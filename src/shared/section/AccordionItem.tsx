@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SubSectionInfo } from '../data';
+import { SubSectionInfo } from '../data/data';
 import {
   Accordion,
   AccordionBody,

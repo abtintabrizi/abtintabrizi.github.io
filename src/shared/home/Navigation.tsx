@@ -4,17 +4,18 @@ import {
   List,
   ListItem,
   Navbar,
-} from "@material-tailwind/react";
-import HomeIcon from "./HomeIcon";
-import { useEffect, useState } from "react";
-import { data } from "../data";
+} from '@material-tailwind/react';
+import HomeIcon from './HomeIcon';
+import { useEffect, useState } from 'react';
+import { data } from '../data/data';
+import { aboutData } from '../data/about-data';
 
 export default function Navigation() {
   const [openNav, setOpenNav] = useState(false);
 
   const scrollAndClose = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
+      behavior: 'smooth',
     });
 
     setTimeout(function () {
@@ -24,12 +25,12 @@ export default function Navigation() {
 
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         // @ts-ignore
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
         });
       });
     });
@@ -45,11 +46,11 @@ export default function Navigation() {
 
         <div className='flex items-center gap-4'>
           <div className='mr-4 hidden lg:block space-x-2'>
-            {data.map((section) => {
+            {[aboutData, ...data].map((section) => {
               return (
                 <a
                   key={section.header}
-                  href={`#${section.header}`}
+                  href={`#${section.header.replace(/\s/g, '')}`}
                   className='font-bold p-4 border-blue-gray-400 rounded-3xl hover:text-blue-700 hover:shadow-md hover:bg-blue-gray-200/10 ease-in-out duration-300'
                 >
                   {section.header}
