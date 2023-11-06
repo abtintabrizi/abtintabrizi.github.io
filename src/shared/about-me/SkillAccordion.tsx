@@ -38,7 +38,7 @@ export default function SkillAccordion({ section }: { section: SkillSection }) {
     if (section.type === 'Frontend') {
       toggleOpen(open);
     }
-  }, []);
+  }, [open, section.type]);
 
   return (
     <div>
