@@ -38,7 +38,8 @@ export default function SkillAccordion({ section }: { section: SkillSection }) {
     if (section.type === 'Frontend') {
       toggleOpen(open);
     }
-  }, [open, section.type]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div>
