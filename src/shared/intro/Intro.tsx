@@ -19,7 +19,7 @@ export default function Intro() {
           <Typography className='md:text-xl text-base'>
             I'm a student currently studying computer science at the University
             of Waterloo, welcome to my portfolio. Scroll down to see more. Last
-            updated October 27th, 2023.
+            updated November 5th, 2023.
           </Typography>
         </div>
 

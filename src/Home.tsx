@@ -2,8 +2,8 @@ import { data } from './shared/data/data';
 import Section from './shared/section/Section';
 import ScrollToTop from './shared/home/ScrollToTop';
 import Navigation from './shared/home/Navigation';
-import Intro from './shared/section/Intro';
-import AboutMe from './shared/section/AboutMe';
+import Intro from './shared/intro/Intro';
+import AboutMe from './shared/about-me/AboutMe';
 
 export default function Home() {
   return (

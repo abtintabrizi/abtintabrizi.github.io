@@ -8,7 +8,7 @@ export type AboutSection = {
 
 export type AboutSectionInfo = {
   sectionHeader: string;
-  timelineItems?: TimelineItem[];
+  timelineEntries?: TimelineEntry[];
   skillSections?: SkillSection[];
 };
 
@@ -17,7 +17,7 @@ export type SkillSection = {
   skills: string[];
 };
 
-export type TimelineItem = {
+export type TimelineEntry = {
   date?: string;
   period?: {
     startDate: string;
@@ -33,10 +33,10 @@ export const aboutData: AboutSection = {
   subSections: [
     {
       sectionHeader: 'My Journey So Far',
-      timelineItems: [
+      timelineEntries: [
         {
           date: 'September 2020',
-          icon: <AcademicCapIcon className='h-5 w-5' />,
+          icon: <AcademicCapIcon className='md:h-5 md:w-5 h-3 w-3' />,
           title: 'Begin @ University of Waterloo',
         },
         {
@@ -44,7 +44,7 @@ export const aboutData: AboutSection = {
             startDate: 'May 2021',
             endDate: 'August 2021',
           },
-          icon: <BriefcaseIcon className='h-5 w-5' />,
+          icon: <BriefcaseIcon className='md:h-5 md:w-5 h-3 w-3' />,
           title: 'Project Team Member @ WE Accelerate',
         },
         {
@@ -52,7 +52,7 @@ export const aboutData: AboutSection = {
             startDate: 'May 2022',
             endDate: 'August 2022',
           },
-          icon: <BriefcaseIcon className='h-5 w-5' />,
+          icon: <BriefcaseIcon className='md:h-5 md:w-5 h-3 w-3' />,
           title: 'Full Stack Engineer @ Thomson Reuters',
         },
         {
@@ -60,7 +60,7 @@ export const aboutData: AboutSection = {
             startDate: 'January 2023',
             endDate: 'April 2023',
           },
-          icon: <BriefcaseIcon className='h-5 w-5' />,
+          icon: <BriefcaseIcon className='md:h-5 md:w-5 h-3 w-3' />,
           title: 'Frontend Software Engineer @ SS&C Technologies',
         },
         {
@@ -68,7 +68,7 @@ export const aboutData: AboutSection = {
             startDate: 'September 2023',
             endDate: 'Present',
           },
-          icon: <BriefcaseIcon className='h-5 w-5' />,
+          icon: <BriefcaseIcon className='md:h-5 md:w-5 h-3 w-3' />,
           title: 'Full Stack Software Engineer @ Arctic AI',
         },
         // {
