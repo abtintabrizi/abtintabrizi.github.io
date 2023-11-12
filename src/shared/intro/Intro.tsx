@@ -1,5 +1,5 @@
 import { Typography } from '@material-tailwind/react';
-import self from '../theme/self.png';
+import self from '../theme/self-min.png';
 // @ts-ignore
 import resume from '../theme/website_resume.pdf';
 

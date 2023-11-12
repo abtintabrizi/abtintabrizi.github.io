@@ -11,7 +11,7 @@ export default function AboutMe() {
     >
       <Typography variant='h2'>{aboutData.header}</Typography>
 
-      <div className='w-full grid grid-cols-2 gap-4'>
+      <div className='w-full md:grid md:grid-cols-2 gap-4 flex flex-col'>
         {aboutData.subSections.map((subSection) => {
           return (
             <div
