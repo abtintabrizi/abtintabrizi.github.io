@@ -26,7 +26,7 @@ export const data: SectionInfo[] = [
         endDate: 'May 2025',
         listItems: [
           'Candidate for Bachelor of Computer Science, Honours Computer Science',
-          '92.1% Average, 4.0/4.0 CGPA',
+          '92.2% (3.93/4.0) CGPA',
           "Term 1A-3B Dean's Honours List",
           "President's Scholarship of Distinction recipient",
         ],
@@ -34,7 +34,9 @@ export const data: SectionInfo[] = [
           {
             itemHeader: 'Relevant Courses',
             listItems: [
+              'CS 370 - Numerical Computation',
               'CS 350 - Operating Systems',
+              'CS 349 - User Interfaces',
               'CS 348 - Introduction to Database Management',
               'CS 341 - Algorithms',
               'CS 251 - Computer Organization and Design',
@@ -60,13 +62,21 @@ export const data: SectionInfo[] = [
     header: 'Experience',
     subSections: [
       {
+        itemHeader: 'Full Stack Software Engineer',
+        description: 'Arctic AI',
+        location: 'Toronto, ON',
+        startDate: 'Sept. 2023',
+        endDate: 'Present',
+        listItems: [],
+      },
+      {
         itemHeader: 'Frontend Software Engineer',
         description: 'SS&C Technologies',
         location: 'Toronto, ON',
         startDate: 'Jan. 2023',
         endDate: 'Apr. 2023',
         listItems: [
-          'Updated and maintained responsive and interactive UI for the TRAC web application using <span className="font-bold">Vue.js</span> and frontend concepts such as <span className="font-bold">routing</span> and <span className="font-bold">stores</span> used by 88% of the top 50 providers in the retirement industry',
+          'Updated and maintained responsive and interactive UI for the TRAC web application using <span className="font-bold">Vue</span> and frontend concepts such as <span className="font-bold">routing</span> and <span className="font-bold">stores</span> used by 88% of the top 50 providers in the retirement industry',
           'Designed and implemented features by consuming RESTful APIs then processing and displaying the data through <span className="font-bold">computed properties</span> and <span className="font-bold">lifecycle hooks</span>',
           'Debugged issues with the help of the browser developer tools and <span className="font-bold">Vue Devtools</span>',
         ],
@@ -80,7 +90,7 @@ export const data: SectionInfo[] = [
         listItems: [
           'Created and updated <span className="font-bold">RESTful</span> APIs implementing <span className="font-bold">.NET</span>’s entity framework in <span className="font-bold">C#</span> completing 6 backlog items, fixing 8 bugs, and correcting over 20 code smells',
           'Modified customer-facing frontends in <span className="font-bold">HTML, Sass,</span> and <span className="font-bold">AngularJS</span> used by 75% of Am Law 200 firms',
-          'Participated in <span className="font-bold">Scrum</span> rituals and <span className="font-bold">DevOps</span> practices such as <span className="font-bold">CI/CD</span> and microservices',
+          'Participated in <span className="font-bold">Scrum</span> rituals and <span className="font-bold">DevOps</span> practices such as <span className="font-bold">CI/CD</span>',
           'Collaborated with a globally diverse team spanning multiple time zones and different roles',
         ],
       },
@@ -102,6 +112,24 @@ export const data: SectionInfo[] = [
     header: 'Projects',
     subSections: [
       {
+        itemHeader: 'abtintabrizi.ca',
+        description: 'New Portfolio Website',
+        listItems: [
+          'Rebuilt portfolio website with a <span className="font-bold">React</span> frontend for better modularity, maintainability, and scalability',
+          'Styled reusable components with <span className="font-bold">Tailwind CSS</span> and the <span className="font-bold">Material Tailwind</span> components library',
+        ],
+      },
+      {
+        itemHeader: 'Budget Tracker',
+        description: 'Full Stack Database Project',
+        listItems: [
+          'Developed and implemented modular and reusable user interfaces using <span className="font-bold">React</span> and the <span className="font-bold">React Table</span> library',
+          'Programmed and integrated a <span className="font-bold">REST API</span> using an <span className="font-bold">Express</span> and <span className="font-bold">Node</span> backend with <span className="font-bold">Axios</span> requests',
+          'Designed a <span className="font-bold">MySQL</span> database schema to store and manage data for the web application through <span className="font-bold">SQL</span> queries',
+          'Directed the project team by planning goals, assigning tasks, managing deadlines, and using <span className="font-bold">Git</span> version control',
+        ],
+      },
+      {
         itemHeader: 'Straights',
         description: 'CS 246 Final Project',
         listItems: [
@@ -116,7 +144,7 @@ export const data: SectionInfo[] = [
         description: '2D Unity Game',
         listItems: [
           'Scripted player behaviour and enemy behaviour including user interface, animations, controls, movement, attacking, items, and upgrades in <span className="font-bold">Unity</span> with <span className="font-bold">C#</span>',
-          'Used an inheritance hierarchy for easy maintenance and expansion of damageable objects like players, enemies, and items',
+          'Used an <span className="font-bold">inheritance hierarchy</span> and <span className="font-bold">polymorphism</span> for easy maintenance and expansion of damageable objects like players, enemies, and items',
           'Implemented enemy pathfinding and artificial intelligence with the <span className="font-bold">A*</span> search algorithm resulting in smart enemies that can traverse levels',
           'Procedurally generated maps from premade modular levels created with <span className="font-bold">Unity Tilemaps</span>, the <span className="font-bold">Universal Render Pipeline</span>, and assets from Unity Asset Store',
         ],

@@ -20,7 +20,7 @@ export default function Navigation() {
 
     setTimeout(function () {
       setOpenNav(false);
-    }, 500);
+    }, 800);
   };
 
   useEffect(() => {
@@ -101,7 +101,7 @@ export default function Navigation() {
 
       <Collapse open={openNav}>
         <List>
-          {data.map((section) => {
+          {[aboutData, ...data].map((section) => {
             return (
               <ListItem className='p-0' key={section.header}>
                 <button
